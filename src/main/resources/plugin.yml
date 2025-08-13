@@ -1,0 +1,27 @@
+name: PlayerTaskEss
+version: '1.0-SNAPSHOT'
+main: org.a.playerTaskEss.PlayerTaskEss
+api-version: '1.21'
+softdepend: [Vault]
+description: 全服委托插件 - 每日随机任务系统
+author: [chenasyd]
+website: https://github.com/PlayerTaskEss
+
+commands:
+  dailytask:
+    description: 打开每日任务菜单
+    usage: /dailytask
+    aliases: [dt, task]
+
+permissions:
+  playertaskess.dailytask:
+    description: 允许使用每日任务命令
+    default: true
+  playertaskess.refresh:
+    description: 允许刷新每日任务
+    default: op
+  playertaskess.admin:
+    description: 管理员权限
+    default: op
+    children:
+      playertaskess.refresh: true

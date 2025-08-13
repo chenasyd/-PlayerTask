@@ -1,0 +1,318 @@
+# PlayerTaskEss 配置文件
+
+# 任务配置
+tasks:
+  # 收集类任务
+  iron_pickaxe:
+    name: "铁镐回收"
+    description: "将铁镐交给系统"
+    material: "IRON_PICKAXE"
+    price: 10
+    required-item: "IRON_PICKAXE"
+    type: "COLLECT"
+    required-amount: 1
+    detailed-description:
+      - "§7铁镐可以通过挖铁矿获得"
+      - "§7或在村民交易中获取"
+
+  golden_apple:
+    name: "金苹果上缴"
+    description: "上缴一个金苹果"
+    material: "GOLDEN_APPLE"
+    price: 20
+    required-item: "GOLDEN_APPLE"
+    type: "COLLECT"
+    required-amount: 1
+    detailed-description:
+      - "§7金苹果可以通过金锭制作"
+      - "§7或在村庄箱子中找到"
+
+  diamond:
+    name: "钻石收集"
+    description: "收集一颗钻石"
+    material: "DIAMOND"
+    price: 30
+    required-item: "DIAMOND"
+    type: "COLLECT"
+    required-amount: 1
+    detailed-description:
+      - "§7钻石可以通过挖钻石矿获得"
+      - "§7建议在Y=-59层附近挖掘"
+
+  emerald:
+    name: "绿宝石交易"
+    description: "交易一个绿宝石"
+    material: "EMERALD"
+    price: 25
+    required-item: "EMERALD"
+    type: "COLLECT"
+    required-amount: 1
+    detailed-description:
+      - "§7绿宝石可以通过挖矿获得"
+      - "§7或与村民交易获取"
+
+  cobblestone:
+    name: "圆石收集"
+    description: "收集64个圆石"
+    material: "COBBLESTONE"
+    price: 5
+    required-item: "COBBLESTONE:64"
+    type: "COLLECT"
+    required-amount: 64
+    detailed-description:
+      - "§7圆石可以通过挖掘石头获得"
+      - "§7是最基础的建筑材料"
+
+  wood:
+    name: "木材收集"
+    description: "收集32个橡木"
+    material: "OAK_LOG"
+    price: 8
+    required-item: "OAK_LOG:32"
+    type: "COLLECT"
+    required-amount: 32
+    detailed-description:
+      - "§7橡木可以通过砍伐橡树获得"
+      - "§7是重要的建筑材料"
+
+  # 钓鱼任务
+  fish:
+    name: "钓鱼任务"
+    description: "钓到一条鱼"
+    material: "FISHING_ROD"
+    price: 15
+    required-item: "COD"
+    type: "FISH"
+    required-amount: 1
+    detailed-description:
+      - "§7使用钓鱼竿在水边钓鱼"
+      - "§7任何鱼类都可以完成任务"
+
+  fish_multiple:
+    name: "钓鱼大师"
+    description: "钓到5条鱼"
+    material: "FISHING_ROD"
+    price: 25
+    required-item: "COD"
+    type: "FISH"
+    required-amount: 5
+    detailed-description:
+      - "§7使用钓鱼竿在水边钓鱼"
+      - "§7需要钓到5条鱼"
+
+  # 收割任务
+  wheat:
+    name: "小麦收割"
+    description: "收割16个小麦"
+    material: "WHEAT"
+    price: 7
+    required-item: "WHEAT:16"
+    type: "HARVEST"
+    required-amount: 16
+    detailed-description:
+      - "§7种植并收割小麦"
+      - "§7需要骨粉加速生长"
+
+  potato:
+    name: "土豆收割"
+    description: "收割32个土豆"
+    material: "POTATO"
+    price: 12
+    required-item: "POTATO:32"
+    type: "HARVEST"
+    required-amount: 32
+    detailed-description:
+      - "§7种植并收割土豆"
+      - "§7土豆是很好的食物来源"
+
+  carrot:
+    name: "胡萝卜收割"
+    description: "收割24个胡萝卜"
+    material: "CARROT"
+    price: 10
+    required-item: "CARROT:24"
+    type: "HARVEST"
+    required-amount: 24
+    detailed-description:
+      - "§7种植并收割胡萝卜"
+      - "§7胡萝卜可以制作金胡萝卜"
+
+  # 挖矿任务
+  coal_mine:
+    name: "煤炭挖掘"
+    description: "挖掘64个煤炭"
+    material: "COAL"
+    price: 8
+    required-item: "COAL:64"
+    type: "MINE"
+    required-amount: 64
+    target-materials:
+      - "COAL_ORE"
+      - "DEEPSLATE_COAL_ORE"
+    detailed-description:
+      - "§7挖掘煤炭矿石"
+      - "§7煤炭是重要的燃料"
+
+  iron_mine:
+    name: "铁矿挖掘"
+    description: "挖掘32个铁矿石"
+    material: "IRON_ORE"
+    price: 15
+    required-item: "IRON_ORE:32"
+    type: "MINE"
+    required-amount: 32
+    target-materials:
+      - "IRON_ORE"
+      - "DEEPSLATE_IRON_ORE"
+    detailed-description:
+      - "§7挖掘铁矿石"
+      - "§7建议在Y=16层附近挖掘"
+
+  gold_mine:
+    name: "金矿挖掘"
+    description: "挖掘16个金矿石"
+    material: "GOLD_ORE"
+    price: 20
+    required-item: "GOLD_ORE:16"
+    type: "MINE"
+    required-amount: 16
+    target-materials:
+      - "GOLD_ORE"
+      - "DEEPSLATE_GOLD_ORE"
+    detailed-description:
+      - "§7挖掘金矿石"
+      - "§7建议在Y=-16层附近挖掘"
+
+  # 制作任务
+  craft_sword:
+    name: "铁剑制作"
+    description: "制作一把铁剑"
+    material: "IRON_SWORD"
+    price: 12
+    required-item: "IRON_SWORD"
+    type: "CRAFT"
+    required-amount: 1
+    target-materials:
+      - "IRON_SWORD"
+    detailed-description:
+      - "§7在工作台中制作铁剑"
+      - "§7需要2个铁锭和1个木棍"
+
+  craft_pickaxe:
+    name: "钻石镐制作"
+    description: "制作一把钻石镐"
+    material: "DIAMOND_PICKAXE"
+    price: 25
+    required-item: "DIAMOND_PICKAXE"
+    type: "CRAFT"
+    required-amount: 1
+    target-materials:
+      - "DIAMOND_PICKAXE"
+    detailed-description:
+      - "§7在工作台中制作钻石镐"
+      - "§7需要3个钻石和2个木棍"
+
+  craft_bread:
+    name: "面包制作"
+    description: "制作16个面包"
+    material: "BREAD"
+    price: 8
+    required-item: "BREAD:16"
+    type: "CRAFT"
+    required-amount: 16
+    target-materials:
+      - "BREAD"
+    detailed-description:
+      - "§7在工作台中制作面包"
+      - "§7需要3个小麦"
+
+  # 击杀任务
+  kill_zombie:
+    name: "僵尸猎手"
+    description: "击杀10只僵尸"
+    material: "ZOMBIE_HEAD"
+    price: 15
+    required-item: "ROTTEN_FLESH"
+    type: "KILL"
+    required-amount: 10
+    target-materials:
+      - "ZOMBIE"
+    detailed-description:
+      - "§7击杀僵尸"
+      - "§7僵尸在夜晚生成"
+
+  kill_skeleton:
+    name: "骷髅射手"
+    description: "击杀8只骷髅"
+    material: "SKELETON_SKULL"
+    price: 12
+    required-item: "BONE"
+    type: "KILL"
+    required-amount: 8
+    target-materials:
+      - "SKELETON"
+    detailed-description:
+      - "§7击杀骷髅"
+      - "§7骷髅会掉落骨头和箭"
+
+  kill_spider:
+    name: "蜘蛛猎手"
+    description: "击杀12只蜘蛛"
+    material: "SPIDER_EYE"
+    price: 10
+    required-item: "STRING"
+    type: "KILL"
+    required-amount: 12
+    target-materials:
+      - "SPIDER"
+    detailed-description:
+      - "§7击杀蜘蛛"
+      - "§7蜘蛛会掉落线和蜘蛛眼"
+
+  # 交易任务
+  trade_villager:
+    name: "村民交易"
+    description: "与村民进行5次交易"
+    material: "EMERALD"
+    price: 20
+    required-item: "EMERALD"
+    type: "TRADE"
+    required-amount: 5
+    detailed-description:
+      - "§7与村民进行交易"
+      - "§7任何交易都可以"
+
+  # 放置任务
+  place_torch:
+    name: "火把放置"
+    description: "放置32个火把"
+    material: "TORCH"
+    price: 8
+    required-item: "TORCH:32"
+    type: "PLACE"
+    required-amount: 32
+    target-materials:
+      - "TORCH"
+    detailed-description:
+      - "§7放置火把"
+      - "§7火把可以照亮黑暗区域"
+
+# 菜单设置
+menu:
+  title: "每日任务"
+  size: 54
+  border-material: "BLACK_STAINED_GLASS_PANE"
+  completed-material: "GRAY_DYE"
+  decorations:
+    title:
+      material: "GOLD_BLOCK"
+      name: "§6每日任务奖励"
+      lore: 
+        - "§7完成每日任务获取丰厚奖励"
+        - "§7任务每天凌晨自动刷新"
+    bottom:
+      material: "EMERALD"
+      name: "§a任务中心"
+      lore: 
+        - "§7点击查看任务详情"
+        - "§7支持多种任务类型"
